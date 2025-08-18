@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>HTML Table</title>
+    <title>My Fruit Gallery</title>
     <style>
         body {
             background-color: #FFF0F5; 
@@ -15,6 +16,7 @@
 
         td {
             padding: 10px;
+            text-align: center;
         }
 
         h1 {
@@ -24,68 +26,79 @@
         font[size="6"] {
             font-weight: bold;
         }
+
+        /* Tabs menu styling */
+        #tabsI ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        #tabsI ul li {
+            margin: 0;
+        }
+
+        #tabsI ul li a {
+            display: block;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        #tabsI ul li a:hover {
+            background-color: #555;
+        }
+
+        #tabsI ul li#current a {
+            background-color: red;
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <h1><center><font color="red" size="10">My Fruit Gallery</font></center></h1>
+
+    <h1 style="text-align:center;"><font color="red" size="10">My Fruit Gallery</font></h1>
+
+    <div id="tabsI">
+        <ul>
+            <li><a href="MyMain.html"><span>Home</span></a></li>
+            <li><a href="FISHES Act1.html"><span>Fishes</span></a></li>
+            <li><a href="Flowers.html"><span>Flowers</span></a></li>
+            <li><a href="trees.html"><span>Trees</span></a></li>
+            <li><a href="resorts.html"><span>Resorts</span></a></li>
+            <li><a href="animals.html"><span>Animals</span></a></li>
+            <li id="current"><a href="fruits.html"><span>Fruits</span></a></li>
+            <li><a href="About.html"><span>About</span></a></li>
+        </ul>
+    </div>
 
     <center>
-    <table border="1" width="1000" height="500">
+    <table border="1" width="1000">
         <tr>
-            <td align="center">
-                <img src="apple.jpg" width="500" height="500"><br>
-                <center><font size="6">Apple</font></center>
-            </td>
-            <td align="center">
-                <img src="banana.jpg" width="500" height="500"><br>
-                <center><font size="6">Banana</font></center>
-            </td>
-            <td align="center">
-                <img src="dragonfruit.jpg" width="500" height="500"><br>
-                <center><font size="6">Dragonfruit</font></center>
-            </td>
+            <td><img src="apple.jpg" width="300" height="300" alt="Apple"><br><font size="6">Apple</font></td>
+            <td><img src="banana.jpg" width="300" height="300" alt="Banana"><br><font size="6">Banana</font></td>
+            <td><img src="dragonfruit.jpg" width="300" height="300" alt="Dragonfruit"><br><font size="6">Dragonfruit</font></td>
         </tr>
         <tr>
-            <td align="center">
-                <img src="grapes.jpg" width="500" height="500"><br>
-                <center><font size="6">Grapes</font></center>
-            </td>
-            <td align="center">
-                <img src="Guava.jpg" width="500" height="500"><br>
-                <center><font size="6">Guava</font></center>
-            </td>
-            <td align="center">
-                <img src="Lychee.jpeg" width="500" height="500"><br>
-                <center><font size="6">Lychee</font></center>
-            </td>
+            <td><img src="grapes.jpg" width="300" height="300" alt="Grapes"><br><font size="6">Grapes</font></td>
+            <td><img src="Guava.jpg" width="300" height="300" alt="Guava"><br><font size="6">Guava</font></td>
+            <td><img src="Lychee.jpeg" width="300" height="300" alt="Lychee"><br><font size="6">Lychee</font></td>
         </tr>
         <tr>
-            <td align="center">
-                <img src="mango.jpg" width="500" height="500"><br>
-                <center><font size="6">Mango</font></center>
-            </td>
-            <td align="center">
-                <img src="orange.jpg" width="500" height="500"><br>
-                <center><font size="6">Orange</font></center>
-            </td>
-            <td align="center">
-                <img src="papaya.jpg" width="500" height="500"><br>
-                <center><font size="6">Papaya</font></center>
-            </td>
+            <td><img src="mango.jpg" width="300" height="300" alt="Mango"><br><font size="6">Mango</font></td>
+            <td><img src="orange.jpg" width="300" height="300" alt="Orange"><br><font size="6">Orange</font></td>
+            <td><img src="papaya.jpg" width="300" height="300" alt="Papaya"><br><font size="6">Papaya</font></td>
         </tr>
         <tr>
-            <td align="center">
-                <img src="pineapple.jpg" width="500" height="500"><br>
-                <center><font size="6">Pineapple</font></center>
-            </td>
-            <td align="center">
-                <img src="strawberry.jpg" width="500" height="500"><br>
-                <center><font size="6">Strawberry</font></center>
-            </td>
-            <td align="center">
-                <img src="watermelon.jpg" width="500" height="500"><br>
-                <center><font size="6">Watermelon</font></center>
-            </td>
+            <td><img src="pineapple.jpg" width="300" height="300" alt="Pineapple"><br><font size="6">Pineapple</font></td>
+            <td><img src="strawberry.jpg" width="300" height="300" alt="Strawberry"><br><font size="6">Strawberry</font></td>
+            <td><img src="watermelon.jpg" width="300" height="300" alt="Watermelon"><br><font size="6">Watermelon</font></td>
         </tr>
         <tr>
             <td colspan="3">
@@ -93,5 +106,7 @@
             </td>
         </tr>
     </table>
+    </center>
+    
 </body>
 </html>
